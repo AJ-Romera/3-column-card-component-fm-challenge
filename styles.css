@@ -10,16 +10,69 @@
 
 body {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	height: auto;
 	font-size: 0.938rem;
 	background-color: var(--very-light-gray);
 }
 
-/* body {
-    width: 100vw;
-    height: auto;
-  } */
+.cards-container {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	margin: 4rem 1rem;
+}
+
+.sedans-card {
+	background-color: var(--bright-orange);
+	padding: 3.25rem;
+}
+.suvs-card {
+	background-color: var(--dark-cyan);
+	padding: 3.25rem;
+}
+.luxury-card {
+	background-color: var(--very-dark-cyan);
+	padding: 3.25rem;
+}
+
+.card-heading {
+	font-family: var(--big-shoulders-d-font);
+	font-weight: 600;
+	font-size: 2.55rem;
+	color: var(--very-light-gray);
+	text-transform: uppercase;
+}
+.card-content {
+	font-family: var(--lexend-font);
+	color: var(--transparent-white);
+	line-height: 1.75rem;
+	opacity: 87%;
+	margin-bottom: 1.75rem;
+}
+
+.sedans-card > button {
+	color: var(--bright-orange);
+}
+.suvs-card > button {
+	color: var(--dark-cyan);
+}
+.luxury-card > button {
+	color: var(--very-dark-cyan);
+}
+button {
+	font-family: var(--lexend-font);
+	background-color: var(--very-light-gray);
+	text-transform: capitalize;
+	padding: 0.9rem 2.5rem;
+	border: 0;
+	border-radius: 1.75rem;
+	font-weight: bold;
+	font-size: 0.97rem;
+}
 
 .attribution {
 	font-size: 11px;
