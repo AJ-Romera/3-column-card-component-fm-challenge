@@ -9,9 +9,17 @@
 }
 
 body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-size: 0.938rem;
 	background-color: var(--very-light-gray);
 }
+
+/* body {
+    width: 100vw;
+    height: auto;
+  } */
 
 .attribution {
 	font-size: 11px;
