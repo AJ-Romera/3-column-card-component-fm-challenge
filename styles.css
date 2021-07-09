@@ -68,10 +68,16 @@ button {
 	background-color: var(--very-light-gray);
 	text-transform: capitalize;
 	padding: 0.9rem 2.5rem;
-	border: 0;
+	border: 1px solid transparent;
 	border-radius: 1.75rem;
 	font-weight: bold;
 	font-size: 0.97rem;
+}
+button:hover {
+	border: 1px solid var(--very-light-gray);
+	background-color: transparent;
+	color: var(--very-light-gray);
+	cursor: pointer;
 }
 
 .attribution {
