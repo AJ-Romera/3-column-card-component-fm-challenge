@@ -67,7 +67,7 @@ button {
 	font-family: var(--lexend-font);
 	background-color: var(--very-light-gray);
 	text-transform: capitalize;
-	padding: 0.9rem 2.5rem;
+	padding: 0.9rem 2.2rem;
 	border: 1px solid transparent;
 	border-radius: 1.75rem;
 	font-weight: bold;
@@ -92,5 +92,14 @@ button:hover {
 I prefer 768 and below for mobile-tablet and above for desktop
 I can add more precise breakpoints but this is just a practice */
 @media screen and (min-width: 768px) {
-	/* ... */
+	.cards-container {
+		flex-direction: row;
+		margin: 4rem 2rem;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.cards-container {
+		flex-direction: row;
+		margin: 4rem 10rem;
+	}
 }
