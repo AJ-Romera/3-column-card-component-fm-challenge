@@ -1,5 +1,17 @@
-/* font-family: 'Big Shoulders Display', cursive;
-font-family: 'Lexend Deca', sans-serif; */
+:root {
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--very-dark-cyan: hsl(179, 100%, 13%);
+	--transparent-white: hsla(0, 0%, 100%, 0.75);
+	--very-light-gray: hsl(0, 0%, 95%);
+	--lexend-font: 'Lexend Deca', sans-serif;
+	--big-shoulders-d-font: 'Big Shoulders Display', cursive;
+}
+
+body {
+	font-size: 0.938rem;
+	background-color: var(--very-light-gray);
+}
 
 .attribution {
 	font-size: 11px;
@@ -7,4 +19,11 @@ font-family: 'Lexend Deca', sans-serif; */
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+/* The Challenge Provide a Breakpoint at 375px for mobile
+I prefer 768 and below for mobile-tablet and above for desktop
+I can add more precise breakpoints but this is just a practice */
+@media screen and (min-width: 768px) {
+	/* ... */
 }
